@@ -16,9 +16,12 @@ async def help(ctx):
 	embed.set_footer(text="<MADE_BY>")        
 	await ctx.send(embed=embed)
   
-@client.command()
-async def clear(ctx, amount : int):
-	await ctx.channel.purge(limit=amount)
+@client.command(aliases=['purge'])
+async def clear(ctx, amount=3):
+    await ctx.channel.purge(limit=(amount + 1))
+    await ctx.send(f':white_check_mark: **Cleared {amount} messagges!**', delete_after=15)
+# Made by RescueTeam#4804	
+
   
 @client.command()
 async def ping(ctx):
