@@ -1,3 +1,5 @@
+## ODIO I FROCI PORCODDIO, TUTTI AL ROGO
+
 # WARNING!
 # You must modify this file to make your bot work properly!
 # WARNING!
